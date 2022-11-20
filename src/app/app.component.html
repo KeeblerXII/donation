@@ -1,69 +1,64 @@
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div style="background-color:#33475b" class="long-div">
-<mat-toolbar class="thick" color="white">
-  <span>United Salvation</span>
-</mat-toolbar>
-<body>
-<p></p>
-<div class="main-div">
-<mat-card class="example-card">
-<nav class="center">
-  <a class="button"
-     routerLink="/one-time"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    ONE TIME
-  </a>
-  <a class="button"
-     routerLink="/monthly"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    MONTHLY
-  </a>
-</nav>
-<p><router-outlet></router-outlet></p>
+  <mat-toolbar class="thick" color="white">
+    <span>United Salvation</span>
+  </mat-toolbar>
+    <div class="main-div">
+      <mat-card class="example-card">
+        <nav class="center">
+          <a class="button"
+          routerLink="/one-time"
+          routerLinkActive="activebutton"
+          ariaCurrentWhenActive="page">
+          ONE TIME
+        </a>
+        <a class="button"
+        routerLink="/monthly"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page">
+        MONTHLY
+      </a>
+    </nav>
+    <p><router-outlet></router-outlet></p>
 
 
-  <br>
-  <br>
-  <br>
-  <br>
- 
-  <mat-divider></mat-divider>
-  <br>
-  <h2>Your Information</h2>
-  <mat-form-field class="name" appearance="outline">
-    <mat-label>First Name</mat-label>
-    <input matInput placeholder="">
-  </mat-form-field>
-  <mat-form-field class="name" appearance="outline">
-    <mat-label>Last Name</mat-label>
-    <input matInput placeholder="">
-  </mat-form-field>
-  <p>
-  <mat-form-field class="email" appearance="outline">
-    <mat-label>Email</mat-label>
-    <input matInput placeholder="">
-    <mat-hint>Your receipt will be emailed here.</mat-hint>
-  </mat-form-field>
-  </p>
-  <p><mat-checkbox class="example-margin">I would like to recieve emails from United Salvation</mat-checkbox></p>
-  <br>
-  <mat-divider></mat-divider>
-  <div class="row">
     <br>
-    <div class="center"><h3>Total Donation:</h3></div>
-    
-    <div class="center"><h4>Donate with your preferred payment method: </h4></div>
-    <div>
-    <div class="center"><button mat-stroked-button (click)="openForm()">PNC Cares</button><button mat-stroked-button>PayPal</button><button mat-stroked-button>Credit Card</button></div>
-    </div>
+    <br>
+    <br>
+    <br>
+
+    <mat-divider></mat-divider>
+    <br>
+    <h2>Your Information</h2>
+    <mat-form-field class="name" appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="">
+    </mat-form-field>
+    <mat-form-field class="name" appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="">
+    </mat-form-field>
+    <p>
+      <mat-form-field class="email" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="">
+        <mat-hint>Your receipt will be emailed here.</mat-hint>
+      </mat-form-field>
+    </p>
+    <p><mat-checkbox class="example-margin">I would like to recieve emails from United Salvation</mat-checkbox></p>
+    <br>
+    <mat-divider></mat-divider>
+    <div class="row">
+      <br>
+      <div class="center"><h3>Total Donation:</h3></div>
+
+      <div class="center"><h4>Donate with your preferred payment method: </h4></div>
+      <div>
+        <div class="center"><button mat-stroked-button (click)="openForm()">PNC Cares</button><button mat-stroked-button>PayPal</button><button mat-stroked-button>Credit Card</button></div>
+      </div>
     </div>
   </mat-card>
 </div>
-</body>
-<div class="footer">
-  <p><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon></p>
-</div>
+  <div class="footer">
+    <p><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon></p>
+  </div>
 </div>
