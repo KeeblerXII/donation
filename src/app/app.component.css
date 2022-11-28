@@ -82,3 +82,127 @@
   mat-icon {
     padding-top: 20px;
   }
+
+  .donate-now {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+    float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  background: #ff9e97;
+  color: #141414;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  }
+
+  .donate-now label,
+.donate-now input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.donate-now input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.donate-now input[type="radio"]:checked+label,
+.Checked+label {
+  background: #F44336;
+  color: white;
+  border-radius: 5px;
+}
+
+.donate-now label {
+  padding: 5px;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.donate-now input[type="text"] {
+  text-align: center;
+  line-height: 40px;
+}
+
+.occ {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+  float: left;
+position: relative;
+background: #ff9e97;
+color: #141414;
+font-family: Arial, sans-serif;
+font-size: 15px;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+
+box-shadow: inset 0 1px 0 0 #ffffff;
+    background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+    outline: 0;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    line-height: 30px;
+    max-width: 300px;
+}
+
+.occ label,
+.occ input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.occ input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.occ input[type="radio"]:checked+label,
+.Checked+label {
+  box-shadow: inset 0 1px 0 0 #03172c;
+    background: #03172c;
+    border: 1px solid #03172c;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #03172c;
+}
+
+.occ label {
+  padding: 5px;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.occ input[type="text"] {
+  text-align: center;
+  line-height: 40px;
+}

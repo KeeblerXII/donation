@@ -3,7 +3,7 @@
 <p></p>
 <p>Choose a <b>monthly</b> amount</p>
 
-<ul class="donate-now" id="amount">
+<!-- <ul class="donate-now" id="amount">
     <li>
       <input type="radio" id="a100" name="amount" value="100"/>
       <label for="a25">$100</label>
@@ -27,4 +27,15 @@
     <li>
       <input type="text" id="otherAmount" name="numAmount" />
     </li>
-  </ul>
+  </ul> -->
+
+  <div *ngFor="let amount of amounts">
+    <input
+    type="radio"
+    name="amountOfDonation"
+    value="{{amount}}"
+    (change)="radioChangeHandler($event)">
+    <i>{{amount}}</i>
+  </div>
+
+  <p><span>You selected:</span><b>{{selectedAmount}}</b></p>

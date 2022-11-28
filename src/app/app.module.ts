@@ -53,5 +53,5 @@ import { DonationFormComponent } from './donation-form/donation-form.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 

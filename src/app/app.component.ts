@@ -20,4 +20,28 @@ export class AppComponent implements OnInit {
   receivemessage(evt:any){
   console.log(evt.data)
   }
+
+  selectedAmount: string = '';
+  amounts: any = [
+    '$100',
+    '$50',
+    '$25',
+    '$15',
+    'Custom:'
+  ];
+  
+  radioChangeHandler (event: any) {
+    this.selectedAmount = event.target.value;
+  }
+
+  selectedOccurence: string = '';
+  occurences: any = [
+    'ONE TIME',
+    'MONTHLY'
+  ];
+  
+  radioChangeHandler2 (event: any) {
+    this.selectedOccurence = event.target.value;
+  }
+
 }
