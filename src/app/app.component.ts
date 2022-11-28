@@ -27,7 +27,6 @@ export class AppComponent implements OnInit {
     '$50',
     '$25',
     '$15',
-    'Custom:'
   ];
   
   radioChangeHandler (event: any) {
