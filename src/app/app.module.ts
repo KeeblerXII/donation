@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { AppComponent } from './app.component';
-import { MonthlyComponent } from './monthly/monthly.component';
-import { OneTimeComponent } from './one-time/one-time.component';
 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
@@ -27,8 +25,6 @@ import { DonationFormComponent } from './donation-form/donation-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OneTimeComponent,
-    MonthlyComponent,
     DonationFormComponent
   ],
   imports: [
@@ -44,11 +40,6 @@ import { DonationFormComponent } from './donation-form/donation-form.component';
     MatDividerModule,
     MatButtonModule,
     MatIconModule,
-    RouterModule.forRoot([
-      {path: 'one-time', component: OneTimeComponent},
-      {path: 'monthly', component: MonthlyComponent},
-      {path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
-    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
