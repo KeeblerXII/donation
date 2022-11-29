@@ -20,12 +20,10 @@ import { MatRadioModule } from '@angular/material/radio';
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { DonationFormComponent } from './donation-form/donation-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DonationFormComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -45,4 +43,3 @@ import { DonationFormComponent } from './donation-form/donation-form.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-
