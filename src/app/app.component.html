@@ -4,7 +4,7 @@
   </mat-toolbar>
     <div class="main-div">
       <mat-card class="example-card">
-    
+
     <div class="center">
     <div *ngFor="let occurence of occurences" class="occ">
       <input
@@ -12,7 +12,11 @@
       name="occurenceOfDonation"
       value="{{occurence}}"
       (change)="radioChangeHandler2($event)">
-      <label>{{occurence}}</label>
+      <label
+        [ngClass]="{selected: occurence === selectedOccurence}"
+      >
+        {{occurence}}
+      </label>
     </div>
     </div>
     <br>
@@ -23,13 +27,17 @@
       name="amountOfDonation"
       value="{{amount}}"
       (change)="radioChangeHandler($event)">
-      <label>{{amount}}</label>
+      <label
+        [ngClass]="{selected: amount === selectedAmount}"
+      >
+        ${{amount}}
+      </label>
     </div>
     <br>
     <br>
     <br>
     <br>
-  
+
 
     <mat-divider></mat-divider>
     <br>
@@ -55,12 +63,16 @@
     <div class="row">
       <br>
       <div class="center"><p><span>Total </span><b>{{selectedOccurence}}</b><span> Donation:</span></p></div>
-      <div class="center"><h1><b>{{selectedAmount}}</b></h1></div>
-      
+      <div class="center"><h1><b>${{selectedAmount}}</b></h1></div>
+
 
       <div class="center"><h4>Donate with your preferred payment method: </h4></div>
       <div>
-        <div class="center"><button mat-stroked-button (click)="openForm()">PNC Cares</button><button mat-stroked-button>PayPal</button><button mat-stroked-button>Credit Card</button></div>
+        <div class="center">
+          <button mat-stroked-button >PNC Cares</button>
+          <button mat-stroked-button>PayPal</button>
+          <button mat-stroked-button>Credit Card</button>
+        </div>
       </div>
     </div>
   </mat-card>
