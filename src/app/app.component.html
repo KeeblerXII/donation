@@ -28,7 +28,7 @@
       value="{{amount}}"
       (change)="radioChangeHandler($event)">
       <label
-        [ngClass]="{selected: amount === selectedAmount}"
+        [ngClass]="{selected: amount == selectedAmount}"
       >
         ${{amount}}
       </label>
