@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 250px;
   }
 
   .center {
@@ -40,11 +40,21 @@
     width: 50%;
   }
 
+  .mat-flat-button {
+    width: 100%;
+    height: 60%;
+    line-height: 30px;
+    max-width: 135px;
+    margin: 0 5px 0 5px;
+    padding: 0px;
+  }
+
   .mat-stroked-button {
     width: 100%;
     height: 60%;
     line-height: 30px;
-    max-width: 200px;
+    max-width: 135px;
+    margin: 0 5px 0 5px;
   }
 
   mat-icon {
@@ -161,4 +171,19 @@ box-shadow: inset 0 1px 0 0 #ffffff;
   padding: 5px;
   cursor: pointer;
   z-index: 90;
+}
+
+img{
+  border-radius: 3px;
+  max-width: 135px;
+  padding: 0px;
+}
+
+img:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }

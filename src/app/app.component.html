@@ -41,23 +41,23 @@
 
     <mat-divider></mat-divider>
     <br>
-    <h2>Your Information</h2>
+    <!-- <h2>Your Information</h2> -->
     <mat-form-field class="name" appearance="outline">
       <mat-label>First Name</mat-label>
-      <input matInput placeholder="" required>
+      <input matInput placeholder="">
     </mat-form-field>
     <mat-form-field class="name" appearance="outline">
       <mat-label>Last Name</mat-label>
-      <input matInput placeholder="" required>
+      <input matInput placeholder="">
     </mat-form-field>
-    <p>
+    <!-- <p>
       <mat-form-field class="email" appearance="outline">
         <mat-label>Email</mat-label>
         <input matInput placeholder="donate@example.com" required>
         <mat-hint>Your receipt will be emailed here.</mat-hint>
       </mat-form-field>
-    </p>
-    <p><mat-checkbox class="example-margin">I would like to recieve emails from United Salvation</mat-checkbox></p>
+    </p> -->
+    <!-- <p><mat-checkbox name="anon">Donate Anonymously</mat-checkbox></p> -->
     <br>
     <mat-divider></mat-divider>
     <div class="row">
@@ -69,8 +69,8 @@
       <div class="center"><h4>Donate with your preferred payment method: </h4></div>
       <div>
         <div class="center">
-          <a href="#" (click)="pncAuth()" mat-stroked-button>PNC</a>
-          <button mat-stroked-button>PayPal</button>
+          <a href="#" (click)="pncAuth()" mat-flat-button><img src="assets\img\PNC.png"></a>
+          <button mat-flat-button><img src="assets\img\paypal.png"></button>
           <button mat-stroked-button>Credit Card</button>
         </div>
       </div>
